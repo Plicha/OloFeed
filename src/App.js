@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './components/layout/Menu';
+import Gun from './components/layout/Gun';
+import MainGame from './components/layout/MainGame';
 
 class App extends Component {
   render() {
@@ -10,7 +12,8 @@ class App extends Component {
             <div className="menu">
               <Menu />
             </div>
-            <div className="mainGame"></div>
+            
+            <MainGame><Gun/></MainGame>
             <div className="controls"></div>
           </div>
         </header>
@@ -18,5 +21,5 @@ class App extends Component {
     );
   }
 }
-
+//nie można btać między tagi <MainGame><Gun/></MainGame>
 export default App;

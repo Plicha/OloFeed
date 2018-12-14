@@ -4,6 +4,8 @@ import './style/index.css';
 import './style/menu.css';
 import './style/controls.css';
 import './style/mainGame.css';
+import './style/gun.css';
+import './style/mainCharacter.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
