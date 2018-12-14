@@ -1,0 +1,6 @@
+.mainGame{
+    background-color: brown;
+    width: 79vw;
+    height: 60vh;
+    grid-area: mainGame;
+  } 

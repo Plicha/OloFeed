@@ -1,0 +1,8 @@
+html{
+  min-height: 100%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 'menu mainGame' 'menu controls';
+}

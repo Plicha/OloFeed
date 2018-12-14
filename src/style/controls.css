@@ -1,0 +1,7 @@
+.controls{
+    width: 79vw;
+    height: 30vh;
+    background-color:blueviolet;
+    background-size: 100%;
+    grid-area: controls;
+  }
