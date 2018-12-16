@@ -1,9 +1,12 @@
 .controls{
     width: 79vw;
     height: 30vh;
-    background-color:blueviolet;
+    background-image: linear-gradient(to right, #8b8378, #cdc0b0,#8b8378); 
     background-size: 100%;
     grid-area: controls;
+    border-radius: 0 0 2vh 0;
+    border-bottom: 4px solid #8b8378;
+	  
   }
   .controls button{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -27,13 +30,13 @@
   }
   .points{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     text-transform: uppercase;
     text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
     color: white;
     position: absolute;
     
-    right: 10vw;
+    right: 5vw;
     bottom: 30%;
   }
   .feedPointer{
@@ -59,4 +62,27 @@
     
     margin-left: 2vw;
     bottom: 30%;
+  }
+  .currentWeapon p{
+    color: rgb(173, 215, 255);
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .shotsAvailable{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    
+    right: 5vw;
+    bottom: 15%;
+  }
+  .shotsAvailable span{
+    color: rgb(173, 215, 255);
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
   }

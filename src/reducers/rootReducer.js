@@ -1,6 +1,12 @@
 const initState = {
+    weaponDescription: [
+        {id:1,value:'Makaron na patelni!'},
+        {id:2,value:'Surfik!'},
+        {id:3,value:'Zatecky Svetly Lezak'},
+    ],
     currentWeapon: 3,
-    appearShot:false
+    appearShot:false,
+    shotsAvailable: 10
     
 }
 const rootReducer = (state = initState, action) =>{

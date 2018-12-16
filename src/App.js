@@ -4,9 +4,6 @@ import MainGame from './components/layout/MainGame';
 import Controls from './components/layout/Controls';
 
 class App extends Component {
-  state={
-    
-  }
   render() {
     return (
       <div className="App">
