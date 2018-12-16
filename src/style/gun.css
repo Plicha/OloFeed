@@ -1,10 +1,10 @@
 .gunBG{
-    background-color: black;
+    /* background-color: black; */
     width: 140px;
     height: 140px;
     
     position: absolute;
-    top: 30vh;
+    top: 35vh;
 }
 .gunBG img{
     height: 100%;

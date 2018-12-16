@@ -3,4 +3,5 @@
     width: 79vw;
     height: 60vh;
     grid-area: mainGame;
+    position: relative;
   } 

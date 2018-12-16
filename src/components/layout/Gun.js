@@ -1,10 +1,27 @@
-import React from 'react'
+import React,{ Component } from 'react'
+import { connect } from 'react-redux'
 
-function gun() {
+
+    
+class Gun extends Component {
+  render(){
+    const id = "./img/"+this.props.currentWeapon+".png";
+    const color = this.props.backgroundColor;
+    const bgColor = {
+      backgroundColor: color
+    }
   return (
-    <div className="gunBG">
-      <img src="./img/1.png" alt=""/>
+    
+    <div className="gunBG" style={bgColor}>
+      <img src={id} alt=""/>
     </div>
   )
 }
-export default gun
+}
+const MapStateToProps = (state) =>{
+  return{
+    currentWeapon: state.currentWeapon,
+    backgroundColor: state.backgroundColor
+  }
+}
+export default connect(MapStateToProps)(Gun)

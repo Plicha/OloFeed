@@ -5,3 +5,58 @@
     background-size: 100%;
     grid-area: controls;
   }
+  .controls button{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    color: white;
+    border-radius: 10px;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.35);
+    background: hsla(260, 100%, 50%, 1);
+    cursor: pointer;
+    outline: 0 !important;
+  }
+  .controls button:hover{
+    box-shadow: 0 0 3px 3px hsla(78, 100%, 88%, 0.21);
+  }
+  .points{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    
+    right: 10vw;
+    bottom: 30%;
+  }
+  .feedPointer{
+    right: 3.5vw;
+    bottom: 23%;
+    position: absolute;
+
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+  }
+  .feedPointer div{
+    height: 20px;
+    background: crimson;
+  }
+  .currentWeapon{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    
+    margin-left: 2vw;
+    bottom: 30%;
+  }

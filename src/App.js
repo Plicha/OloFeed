@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import Menu from './components/layout/Menu';
-import Gun from './components/layout/Gun';
 import MainGame from './components/layout/MainGame';
+import Controls from './components/layout/Controls';
 
 class App extends Component {
+  state={
+    
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <div className="grid-container">
             <div className="menu">
-              <Menu />
+              <Menu/>
             </div>
-            
-            <MainGame><Gun/></MainGame>
-            <div className="controls"></div>
+            <MainGame/>
+            <Controls/>
           </div>
         </header>
       </div>
     );
   }
 }
-//nie można btać między tagi <MainGame><Gun/></MainGame>
 export default App;
