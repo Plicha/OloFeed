@@ -1,10 +1,19 @@
 import React,{ Component } from 'react'
 import { connect } from 'react-redux'
+import { setTimeout } from 'timers';
 
 class Controls extends Component {
+    
     handleClick=()=>{
-        console.log("Strzał!");
-        this.props.bgColor('black');
+        var fire;
+        fire = !(this.props.shotStatus) 
+        this.props.appearShot(fire)
+        setTimeout(() => {
+            this.reload()
+        }, 500);
+    }
+    reload=()=>{
+        this.props.appearShot(false)
     }
     
   render(){  
@@ -27,12 +36,13 @@ class Controls extends Component {
 
 const MapStateToProps = (state) =>{
   return{
-    currentWeapon: state.currentWeapon
+    currentWeapon: state.currentWeapon,
+    shotStatus: state.appearShot
   }
 }
 const mapDispatchToProps = (dispatch) =>{
     return {
-      bgColor: (color) => dispatch({type: 'CHANGE_COLOR', bgColor: color})
+        appearShot: (isAppear) => dispatch({type: 'SHOT', appearShot: isAppear})
     }
   }
 export default  connect(MapStateToProps,mapDispatchToProps)(Controls)

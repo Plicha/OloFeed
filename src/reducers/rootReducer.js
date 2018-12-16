@@ -1,6 +1,6 @@
 const initState = {
     currentWeapon: 3,
-    backgroundColor: 'red'
+    appearShot:false
     
 }
 const rootReducer = (state = initState, action) =>{
@@ -12,11 +12,11 @@ const rootReducer = (state = initState, action) =>{
             currentWeapon: newWeapon,
         }
     }
-    if(action.type ==='CHANGE_COLOR'){
-        let newColor = action.bgColor
+    if(action.type ==='SHOT'){
+        let setShot = action.appearShot
         return{
             ...state,
-            backgroundColor: newColor
+            appearShot: setShot
         }
     }
     return state;
