@@ -13,5 +13,6 @@
       transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 .shot-enter.shot-enter-active {
-    transform: translateX(100vw);
+    transform: translateX(1000vw);
+    opacity: 0;
 }

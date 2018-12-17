@@ -1,7 +1,14 @@
 .mainGame{
-    
+
     width: 79vw;
     height: 60vh;
     grid-area: mainGame;
     position: relative;
+
+    background-image: url(/img/bg.jpg);
+    background-size:100%;
+    border-radius: 0 2vh 0 0;
+    border: 1vh solid #2b2b2b;
+    border-bottom: 0;
+    box-sizing: border-box
   } 

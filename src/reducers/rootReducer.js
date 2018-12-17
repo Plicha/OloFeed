@@ -6,8 +6,8 @@ const initState = {
     ],
     currentWeapon: 3,
     appearShot:false,
-    shotsAvailable: 10
-    
+    shotsAvailable: 4,
+    gameResults:"Przegrana"    
 }
 const rootReducer = (state = initState, action) =>{
     
@@ -23,6 +23,20 @@ const rootReducer = (state = initState, action) =>{
         return{
             ...state,
             appearShot: setShot
+        }
+    }
+    if(action.type ==='SHOTS_DEC'){
+        let setShotStatus = action.shotsAvailable
+        return{
+            ...state,
+            shotsAvailable: setShotStatus
+        }
+    }
+    if(action.type === 'GAME_RESULTS'){
+        let setResults = action.gameResults
+        return{
+            ...state,
+            gameResults: setResults
         }
     }
     return state;

@@ -6,11 +6,13 @@ import './style/controls.css';
 import './style/mainGame.css';
 import './style/gun.css';
 import './style/mainCharacter.css';
+import './style/GameStatus.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import rootReducer from './reducers/rootReducer'
+
 
 const store = createStore(rootReducer);
 

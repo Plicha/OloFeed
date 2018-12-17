@@ -1,0 +1,42 @@
+.GameStatus{
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    position: relative;
+}
+.GameStatus div{
+    text-align: center;
+    margin: 5%;
+    padding: 10%;
+    background-color:#3c3c3c;
+    border-radius: 1vh;
+    border: 5px solid #585858;
+}
+.GameStatus button{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 10px;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.35);
+    background: 	#53a122;
+    cursor: pointer;
+    outline: 0 !important;
+  }
+  .GameStatus button:hover{
+    box-shadow: 0 0 0 1vh #b3b3b35d;
+  }
+  .GameStatus img{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    height: 90%;
+    width: auto;
+    border-radius: 1vh;
+    
+    
+  }

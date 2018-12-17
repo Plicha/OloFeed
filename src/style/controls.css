@@ -1,11 +1,15 @@
 .controls{
     width: 79vw;
     height: 30vh;
-    background-image: linear-gradient(to right, #8b8378, #cdc0b0,#8b8378); 
+    
+    background-color: #3c3c3c;
     background-size: 100%;
     grid-area: controls;
+
     border-radius: 0 0 2vh 0;
-    border-bottom: 4px solid #8b8378;
+    border: 1vh solid #2b2b2b;
+    border-left:0;
+    box-sizing: border-box
 	  
   }
   .controls button{
@@ -21,18 +25,18 @@
     text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
     border: 5px solid transparent;
     border-bottom-color: rgba(0,0,0,0.35);
-    background: hsla(260, 100%, 50%, 1);
+    background: 	#53a122;
     cursor: pointer;
     outline: 0 !important;
   }
   .controls button:hover{
-    box-shadow: 0 0 3px 3px hsla(78, 100%, 88%, 0.21);
+    box-shadow: 0 0 0 1vh #b3b3b35d;
   }
   .points{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1em;
     text-transform: uppercase;
-    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+
     color: white;
     position: absolute;
     
@@ -43,20 +47,23 @@
     right: 3.5vw;
     bottom: 23%;
     position: absolute;
+    background-color: #b3b3b35d;
 
     width: 200px;
     border: 2px solid #000;
     margin: 0 auto 20px auto;
+    border-radius:10px;
+    
   }
   .feedPointer div{
     height: 20px;
-    background: crimson;
+    background: #3a2254;
+    border-radius:8px 0 0 8px ;
   }
   .currentWeapon{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1em;
     text-transform: uppercase;
-    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
     color: white;
     position: absolute;
     
@@ -64,7 +71,7 @@
     bottom: 30%;
   }
   .currentWeapon p{
-    color: rgb(173, 215, 255);
+    color: #dbb8ff;
     margin: 0;
     font-size: 0.8em;
     text-align: center;
@@ -73,7 +80,6 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     font-size: 1em;
     text-transform: uppercase;
-    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
     color: white;
     position: absolute;
     
@@ -85,4 +91,5 @@
     margin: 0;
     font-size: 1.2em;
     text-align: center;
+    color: #dbb8ff;
   }
